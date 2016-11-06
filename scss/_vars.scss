@@ -1,0 +1,49 @@
+$font-sans-serif: sans-serif;
+$font-serif: serif;
+$font-monospace: monospace;
+
+$font-primary: $font-sans-serif;
+$font-secondary: $font-serif;
+
+$font-size: 16px;
+
+$color-black: #000000;
+$color-gray8: #303333;
+$color-gray6: #7C8486;
+$color-gray4: #D8DCDC;
+$color-gray2: #F1F2F5;
+$color-white: #FFFFFF;
+
+$color-red: #F16472;
+$color-orange: #F9A752;
+$color-yellow: #FFE53C;
+$color-green: #C0DC8A;
+$color-mint: #48BB8E;
+$color-teal: #B4CEEB;
+$color-blue: #6D87C3;
+$color-violet: #A27EB6;
+$color-purple: #AD5381;
+$color-silver: #BBBDC0;
+
+$color-subtle-red: #FCB4BF;
+$color-subtle-orange: #FFD7B6;
+$color-subtle-yellow: #FCEEB6;
+$color-subtle-green: #EAFCC3;
+$color-subtle-mint: #B2F7E4;
+$color-subtle-teal: #D9E9F9;
+$color-subtle-blue: $color-subtle-teal;
+$color-subtle-violet: #E5C9F7;
+$color-subtle-purple: $color-subtle-violet;
+$color-subtle-silver: #E2E2E2;
+
+$color-default: $color-white;
+$color-primary: $color-white;
+$color-secondary: $color-white;
+$color-error: #EC6D63;
+$color-warning: $color-yellow;
+$color-success: #77BD81;
+$color-info: $color-blue;
+
+$color-backdrop: rgba(255, 255, 255, 0.75);
+
+$transition-default: all 0.2s ease-out 0s;

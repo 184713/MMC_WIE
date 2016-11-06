@@ -6,15 +6,20 @@
     <title>WebImageEditor</title>
 
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/fabric.min.js"></script>
     <script type="text/javascript" src="js/wie.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/wie.css">
 </head>
-<body>
+<body class="wie">
 
-<div class="gp">
-    <canvas></canvas>
-</div>
+<div class="gp"></div>
+
+<script type="text/javascript">
+    $( document ).ready(function() {
+        WIE.prototype._init($('body'), $);
+    });
+</script>
 
 </body>
 </html>
