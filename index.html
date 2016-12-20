@@ -14,9 +14,17 @@
 <body class="wie">
 
 <div class="gp"></div>
+<div class="controls">
+    <div class="brush-size">
+        <button class="btn set-brush-size" data-size="5" tabindex="1"><i class="material-icons" style="font-size: 10px;">brush</i></button>
+        <button class="btn set-brush-size" data-size="10" tabindex="1"><i class="material-icons" style="font-size: 15px;">brush</i></button>
+        <button class="btn set-brush-size" data-size="15" tabindex="1"><i class="material-icons" style="font-size: 20px;">brush</i></button>
+    </div>
+    <div class="brush-color"></div>
+</div>
 
 <script type="text/javascript">
-    $( document ).ready(function() {
+    $(document).ready(function () {
         WIE.prototype._init($('body'), $);
     });
 </script>

@@ -1,10 +1,33 @@
 @import "reset";
+@import "fonts";
 @import "vars";
 
 .debug * {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-.wie {
+button {
+	background-color: transparent;
+	border: none;
+}
 
+.wie {
+	position: relative;
+
+	.gp {
+		border: 1px solid $color-gray4;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.controls {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		background-color: $color-gray4;
+		height: 3rem;
+		width: 100%;
+	}
 }
