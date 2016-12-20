@@ -20,7 +20,8 @@ WIE.prototype._init = function (container, $) {
             {color: '#FF0000', name: 'red'},
             {color: '#00FF00', name: 'green'},
             {color: '#0000FF', name: 'blue'}
-        ]
+        ],
+        image: 'http://lorempixel.com/output/abstract-q-c-800-600-6.jpg'
     };
 
     console.log('[WIE] Started', options);
@@ -32,6 +33,11 @@ WIE.prototype._init = function (container, $) {
     var canvas = this._canvas;
     canvas.setWidth(options.width);
     canvas.setHeight(options.height);
+
+    if (options.image) {
+        console.log('[WIE] Loading custom background image', options.image);
+        $('.canvas-container', container).append('<img src="' + options.image + '" alt="">');
+    }
 
     $(options.colors).each(function (i, v) {
         $('.brush-color', container).append('<button class="btn set-brush-color" data-color="' + v.color + '" tabindex="1">Brush color: ' + v.name + '</button>')
